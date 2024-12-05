@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+            font-family: 'Arial', sans-serif;
+            margin-top: 20;
+            padding: 0;
+            background-color: #e3f6fd;
+        }
+        
+        header {
+            background:#111110;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        p {
+            margin: 5px 0;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        .about, .mission, .team, .values {
+            background: #ffffff;
+            border-radius: 0px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #0f0f0f;
+        }
+        
+        ul {
+           
+            padding-left: 30px;
+        }
+        
+       
+    </style>
+        
+</head>
+<body>
+    <%-include('../partials/header.ejs')%>
+    
+        <header>
+            <h1>About Us</h1>
+            <p>Your source for lovingly crafted homemade goods!</p>
+        </header>
+        <div>
+            <div class="about">
+                <h2>Our Story</h2>
+                <p>Founded in 2024, we are a small team of artisans dedicated to creating high-quality, handmade products. From delicious jams to beautiful crafts, each item is made with care and passion.</p>
+            </div>
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To bring joy and warmth to homes through our handcrafted products, fostering a connection between creators and customers.</p>
+            </div>
+            <div class="team">
+                <h2>Meet the Team</h2>
+                <ul>
+                    <li><b>Alice:</b> Founder and Head Chef</li>
+                    <li><b>Bob:</b> Craft Specialist</li>
+                    <li><b>Charlie:</b> Marketing Guru</li>
+                </ul>
+            </div>
+            <div class="values">
+                <h2>Our Values</h2>
+                <p>Quality, Sustainability, Community, and Creativity guide everything we do. We believe in using natural ingredients and materials to create products that are not only good for you but also for the planet.</p>
+            </div>
+        </div>
+        
+    <%-include('../partials/footer.ejs')%>
+  
+
+    
+</body>
+</html>

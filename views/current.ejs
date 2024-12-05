@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+            position: relative;
+            border: 2px solid gray;
+            background-color:rgb(199, 194, 194);
+            width: 500px;
+            padding: 50px;
+        }
+input{
+    height: 40px;
+    width: 200px;
+    margin-left: 25px;
+}
+.all1{
+    margin-left: 30px;
+}
+button{
+   margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+}
+    </style>
+</head>
+<body >
+ <div>
+ <%-include('../partials/header.ejs')%>  
+<center>
+ <form action="http://localhost:8012/success" method="post">
+    <label for="name" >NAME:</label>
+    
+    <input type="text" class="all1" na placeholder="enter your name"  name="name" required><br><br>
+    <label for="name">EMAIL:</label>
+    <input type="password"  class="all1"placeholder="password" name="email"required><br><br>
+    <label>CONTACT:</label>
+    <input type="text" class="all" placeholder="enter your no" name="contect"><br><br>
+    <label>ADDRESS:</label>
+    <input type="text" class="all" placeholder="enter your address" name="address"><br><br>
+    <label>CITY:</label>
+    <input type="text" class="all1" placeholder="city" name="city"><br><br>
+    <button>SIGNUP</button>
+    
+    
+ </form>
+
+  </center>
+</div>   
+<%-include('../partials/footer.ejs')%>
+
+</body>
+</html>

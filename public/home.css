@@ -1,0 +1,23 @@
+.all {
+    background-image: url(./background.jpg);
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+.pre{
+   
+    position: relative;
+    text-align: center;
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: column;
+   align-content: flex-end;
+    top: 100px;
+    
+}
+h2{
+    font-size: 40px;
+}
+
+

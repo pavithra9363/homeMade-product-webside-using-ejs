@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+h2 {
+    text-align: center;
+    background-color: blue;
+}
+p{
+color: green;
+}
+
+.craft-list {
+    display:flex;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+    justify-content: space-around;
+   
+}
+button{
+    color: white;
+    background-color: rgb(53, 189, 243);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.craft {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 30px;
+    margin: 10px;
+    height: 450px;
+    width: 300px;
+   
+    text-align: center;
+}
+
+.craft img {
+    max-width: 200px; /* Make images responsive */
+    height: 200px;
+    border-radius: 4px;
+}
+
+
+</style>
+<body>
+    
+    <%-include('../partials/header.ejs')%>
+   
+    <div>
+        
+        <div class="craft-list">
+            <div class="craft">
+                <img src="./wooten.jpg " alt=" Pottery">
+                <h3>Pottery</h3>
+                <p>Price: $150.00</p>
+                <button>CARD</button>
+            </div>
+            <div class="craft">
+                <img src="./screap.jpg" alt="Knitted Scarves">
+                <h3>Knitted Scarves</h3>
+                <p>Price: $20.00</p>
+                <button>CARD</button>
+
+            </div>
+            <div class="craft">
+                <img src="./candle.jpg" alt="Handmade Candles">
+                <h3>Candles</h3>
+                <p>Price: $15.00</p>
+                <button>CARD</button>
+
+            </div>
+        
+            
+            <div class="craft">
+                <img src="./pot.jpg" alt="Mini Terrariums">
+                <h3>Mini Terrariums</h3>
+                <p>Price: $28.00</p>
+                <button>CARD</button>
+
+            </div>
+            <div class="craft">
+                <img src="./bag.jpg" alt="Eco-Friendly Bags">
+                <h3> HandMade Eco-Friendly  Bags</h3>
+                <p>Price: $22.00</p>
+                <button>CARD</button>
+
+            </div>
+            <div class="craft">
+                <img src="./frame.jpg" alt="Customized Picture Frames">
+                <h3>Customized Picture Frames</h3>
+                <p>Price: $18.00</p>
+                <button>CARD</button>
+
+            </div>
+            <div class="craft">
+                <img src="./jew.jpg" alt="Handcrafted Jewelry">
+                <h3>Handcrafted Jewelry</h3>
+                <p>Price: $25.00</p>
+                <button>CARD</button>
+
+            </div>
+            <div class="craft">
+                <img src="./soap.jpg" alt="Organic Soaps">
+                <h3> HandMade  Organic Soaps</h3>
+                <p>Price: $10.00</p>
+                <button>CARD</button>
+
+            </div>
+            
+        </div>
+    </div>
+    <%-include('../partials/footer.ejs')%>
+
+</body>
+</html>
